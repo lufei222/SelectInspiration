@@ -1,3 +1,7 @@
+# 这个包selectUsePlugins
+##只是我为了探究select的size在移动端浏览器的支持情况做的各种页面测试，最终失败了，改用自定义select。所以这个包下面
+都是别人的东西，当然都是可以直接运行的。有兴趣的可以试一下index.html
+其他页面都可以忽略
 # SelectInspiration
 ##想到找这个demo的原因是
 为解决select的size在手机浏览器不支持而生。
