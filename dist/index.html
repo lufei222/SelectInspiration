@@ -1,0 +1,37 @@
+<head>
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.js"></script>
+  <script src="eruda.min.js"></script>
+  <script>eruda.init();</script>
+  <script type="text/javascript">
+
+    function upload(){
+
+      //var cNode = head.cloneNode(true);
+
+      //$("#mypage").appendChild(cNode);
+
+      var head=$("#myfile");
+      alert("head");
+      var newObject = $.extend(true, {}, head);
+      var newObject2 = $.extend(true, {}, head);
+
+//$("#mypage").append(head.get(0).files[0].name);//newObject
+      alert("appendÍê³É");
+      $("#mypage").append(head);
+      $("#title").append(head.clone());
+//$("#title").append(head.get(0).files[0].name+"<br/>");
+      head.attr("name",'myfile')
+    }
+  </script>
+</head>
+
+<html>
+<div id="article_details" class="details">
+    <span id="title">  
+         <input type="File" id="myfile">
+		 <br/>
+		 </span>
+</div>
+<div id="mypage"><div>
+  <button type="button" onclick="upload()">Click Me!</button>
+</html>
